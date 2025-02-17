@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ingénieur Informatique</title>
+    
+    <!-- Méta-tags pour le cache et PWA -->
+    <meta name="theme-color" content="#D52A17">
+    <meta name="description" content="Portfolio d'ingénieur informatique - Développeur Full Stack & Architecte Solutions">
+    <meta name="cache-control" content="public, max-age=31536000">
+    <meta name="expires" content="31536000">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/icon-192.png">
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" as="script">
+    
+    <!-- Styles et polices -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/sliding-doors.css">
+    <link rel="stylesheet" href="css/video-transition.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.12/pdfobject.min.js"></script>
+</head>
+<body>
+    <!-- Portes coulissantes -->
+    <div class="doors-container doors-closed">
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+    </div>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav>
+            <div class="logo"><a href="#" class="logo-text">Mohamed Tazi</a></div>
+            <div class="nav-links">
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <div class="code-block">
+                <pre><code><span class="typed-full-code"></span></code></pre>
+            </div>
+            <h1><span class="typed-text"></span></h1>
+            <p class="subtitle">Développeur Full Stack & Architecte Solutions</p>
+            <div class="hero-cta">
+                <a href="#contact" class="primary-btn">Me contacter</a>
+                <a href="#projects" class="secondary-btn">Voir mes projets</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">精神 // Mon Histoire</span>
+            <h2>Un Voyage Entre Cultures</h2>
+            <p class="section-subtitle">De Casablanca à Ottawa, en passant par l'Italie, mon parcours est façonné par la diversité culturelle et la passion pour l'innovation.</p>
+        </div>
+        <div class="journey-timeline">
+            <div class="timeline-item" data-location="Maroc">
+                <div class="timeline-content">
+                    <div class="timeline-marker"></div>
+                    <h3>Racines Marocaines</h3>
+                    <p>Né et élevé au Maroc, j'ai grandi dans un environnement multiculturel riche, où tradition et modernité se rencontrent.</p>
+                    <div class="location-tag">Maroc 🇲🇦</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-location="Italie">
+                <div class="timeline-content">
+                    <div class="timeline-marker"></div>
+                    <h3>Éducation Italienne</h3>
+                    <p>Mon parcours à l'école italienne m'a offert une perspective unique, mêlant la rigueur européenne à la richesse culturelle méditerranéenne.</p>
+                    <div class="location-tag">École Italienne 🇮🇹</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-location="Canada">
+                <div class="timeline-content">
+                    <div class="timeline-marker"></div>
+                    <h3>Aventure Canadienne</h3>
+                    <p>À l'Université d'Ottawa, j'ai poursuivi mes études en génie informatique, plongeant dans un environnement technologique innovant.</p>
+                    <div class="location-tag">Ottawa, Canada 🇨🇦</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-location="Retour">
+                <div class="timeline-content">
+                    <div class="timeline-marker"></div>
+                    <h3>Retour aux Sources</h3>
+                    <p>De retour au Maroc, je combine mes expériences internationales avec ma connaissance du marché local pour créer des solutions innovantes.</p>
+                    <div class="location-tag">Maroc 🇲🇦</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <span class="section-tag">作品 // Projets</span>
+            <h2>Mes Réalisations</h2>
+            <p class="section-subtitle">Une sélection de projets innovants qui illustrent mon expertise en développement web et en architecture logicielle.</p>
+        </div>
+        <div class="projects-grid">
+            <article class="project-card" data-number="#1">
+                <div class="project-image">
+                    <img src="img/project-1.png" alt="E-commerce Platform">
+                    <div class="peek-yokai">
+                        <img src="img/yokai.png" alt="Peek-a-boo Yokai">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>Application web full-stack avec React et Node.js</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet</a>
+                </div>
+            </article>
+            <article class="project-card" data-number="#2">
+                <a href="projects/motion-portfolio.html">
+                    <div class="project-image">
+                        <img src="img/project-2.png" alt="Portfolio for Motion Designer" class="project-preview-image">
+                        <div class="peek-yokai">
+                            <img src="img/yokai.png" alt="Peek-a-boo Yokai">
+                        </div>
+                    </div>
+                </a>
+                <div class="project-content">
+                    <h3>Portfolio for Motion Designer</h3>
+                    <p>Caroussel de projets pour un motion designer</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Cloudflare Pages</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-number="#3">
+                <div class="project-image">
+                    <img src="img/project-3.png" alt="AI Assistant">
+                    <div class="peek-yokai">
+                        <img src="img/yokai.png" alt="Peek-a-boo Yokai">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Assistant</h3>
+                    <p>Assistant virtuel basé sur l'IA</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>FastAPI</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le projet</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <span class="section-tag">技術 // Compétences</span>
+            <h2>Technologies Maîtrisées</h2>
+            <p class="section-subtitle">Un ensemble complet de compétences techniques acquises à travers mes expériences internationales.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>React / Vue.js</li>
+                    <li>TypeScript</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>WebGL / Three.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js / Express</li>
+                    <li>Python / Django</li>
+                    <li>GraphQL</li>
+                    <li>MongoDB / PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps</h3>
+                <ul>
+                    <li>Docker / Kubernetes</li>
+                    <li>CI/CD</li>
+                    <li>AWS / GCP</li>
+                    <li>Linux / Bash</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-tag">連絡 // Contact</span>
+            <h2>Travaillons Ensemble</h2>
+            <p class="section-subtitle">Vous avez un projet innovant ? Je serais ravi d'en discuter et de mettre mes compétences à votre service.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="mailto:contact@example.com" class="contact-link">
+                    <span class="icon">✉</span>
+                    tazitazi303@gmail.com
+                </a>
+                <a href="https://github.com/yourusername" class="contact-link">
+                    <span class="icon">⌨</span>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-link">
+                    <span class="icon">⚡</span>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Conçu & Développé<span class="footer-kanji"></span>par Mohamed Tazi © 2025</p>
+    </footer>
+
+    <!-- Yokai Button -->
+    <div class="yokai-button" id="yokaiButton">
+        <div class="yokai-tooltip">Curriculum Vitae</div>
+        <img src="img/yokai.png" alt="Yokai">
+    </div>
+
+    <!-- CV Modal -->
+    <div class="cv-modal" id="cvModal">
+        <div class="cv-modal-content">
+            <button class="cv-modal-close" id="cvModalClose">×</button>
+            <div id="pdfContainer"></div>
+        </div>
+    </div>
+
+    <!-- Ajout de la barre de progression du scroll -->
+    <div class="scroll-progress"></div>
+
+    <!-- Scripts -->
+    <script src="js/sliding-doors.js"></script>
+    <script src="js/video-transition.js"></script>
+    <script>
+        // Enregistrement du Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker enregistré avec succès:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Échec de l\'enregistrement du ServiceWorker:', error);
+                    });
+            });
+        }
+
+        // Gestion du bouton Yokai et de la modale CV
+        document.addEventListener('DOMContentLoaded', function() {
+            const yokaiButton = document.getElementById('yokaiButton');
+            const cvModal = document.getElementById('cvModal');
+            const cvModalClose = document.getElementById('cvModalClose');
+            const pdfContainer = document.getElementById('pdfContainer');
+            let pdfLoaded = false;
+
+            yokaiButton.addEventListener('click', () => {
+                cvModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Charger le PDF avec PDFObject
+                if (!pdfLoaded) {
+                    PDFObject.embed('./pdf/MohamedTaziResume.pdf', '#pdfContainer', {
+                        height: '100%',
+                        pdfOpenParams: {
+                            view: 'FitV',
+                            pagemode: 'none',
+                            scrollbar: '0',
+                            toolbar: '0',
+                            statusbar: '0',
+                            messages: '0',
+                            navpanes: '0'
+                        }
+                    });
+                    pdfLoaded = true;
+                }
+            });
+
+            cvModalClose.addEventListener('click', () => {
+                cvModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            cvModal.addEventListener('click', (e) => {
+                if (e.target === cvModal) {
+                    cvModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Animation du texte d'introduction
+            const codeString = `class Engineer {
+    constructor() {
+        this.name = "Mohamed Tazi";
+        this.role = "Ingénieur Informatique";
+        this.passions = ["Web", "Innovation"];
+    }
+}`;
+
+            // Animation du titre
+            new Typed('.typed-text', {
+                strings: ['Développeur.', 'Innovateur.', 'Problem Solver.'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true
+            });
+
+            // Animation du code block
+            new Typed('.typed-full-code', {
+                strings: [codeString],
+                typeSpeed: 30,
+                backSpeed: 20,
+                startDelay: 1000,
+                backDelay: 5000,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+                preStringTyped: () => {
+                    document.querySelector('.code-block').classList.add('typing');
+                },
+                onStringTyped: () => {
+                    setTimeout(() => {
+                        document.querySelector('.typed-full-code').classList.add('highlight');
+                    }, 1000);
+                },
+                onStart: () => {
+                    document.querySelector('.typed-full-code').classList.remove('highlight');
+                }
+            });
+
+            // Gestion de la barre de progression du scroll
+            const scrollProgress = document.querySelector('.scroll-progress');
+            window.addEventListener('scroll', () => {
+                const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (window.scrollY / windowHeight) * 100;
+                scrollProgress.style.transform = `scaleX(${scrolled / 100})`;
+            });
+
+            // Observer pour les animations de la timeline
+            const timelineObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // Animation progressive des éléments de la timeline
+                        if (entry.target.classList.contains('timeline-item')) {
+                            const content = entry.target.querySelector('.timeline-content');
+                            const marker = entry.target.querySelector('.timeline-marker');
+                            const tag = entry.target.querySelector('.location-tag');
+                            
+                            setTimeout(() => content.style.opacity = '1', 200);
+                            setTimeout(() => marker.style.opacity = '1', 400);
+                            setTimeout(() => tag.style.opacity = '1', 600);
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+
+            // Observer les éléments de la timeline
+            document.querySelectorAll('.timeline-item').forEach(el => {
+                timelineObserver.observe(el);
+            });
+
+            // Effet de parallaxe
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                document.querySelectorAll('.parallax').forEach(element => {
+                    const speed = element.dataset.speed || 0.5;
+                    element.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+
+            // Animation des liens de navigation
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('mouseenter', (e) => {
+                    const rect = link.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    link.style.setProperty('--x', `${x}px`);
+                });
+            });
+
+            // Animation du kanji flottant
+            const kanji = document.querySelector('body::before');
+            if (kanji) {
+                window.addEventListener('mousemove', (e) => {
+                    const x = e.clientX / window.innerWidth;
+                    const y = e.clientY / window.innerHeight;
+                    kanji.style.transform = `translate(-50%, -50%) rotate(${-15 + x * 5}deg) scale(${1 + y * 0.1})`;
+                });
+            }
+
+            // Observer pour les animations des projets
+            const projectObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Observer les cartes de projets
+            document.querySelectorAll('.project-card').forEach(card => {
+                projectObserver.observe(card);
+            });
+
+            // Observer pour les animations des compétences
+            const skillsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // Animation des éléments de la liste dans les compétences
+                        if (entry.target.classList.contains('skill-category')) {
+                            const items = entry.target.querySelectorAll('li');
+                            items.forEach((item, index) => {
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateX(0)';
+                                }, index * 100);
+                            });
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Observer les catégories de compétences
+            document.querySelectorAll('.skill-category').forEach(category => {
+                skillsObserver.observe(category);
+            });
+
+            // Forcer l'affichage des titres
+            document.querySelectorAll('.section-header, .section-header h2').forEach(el => {
+                el.style.opacity = '1';
+                el.style.visibility = 'visible';
+                el.style.transform = 'none';
+            });
+        });
+    </script>
+</body>
+</html> 

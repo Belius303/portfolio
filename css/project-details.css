@@ -1,0 +1,408 @@
+/* Styles de base pour la page de détail */
+.project-detail-page {
+    background: var(--background-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Styles du contenu principal */
+.project-detail-content {
+    opacity: 1;
+    transform: none;
+}
+
+/* Header du projet */
+.project-header {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.back-button {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.2rem;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+.back-arrow {
+    font-size: 1.5rem;
+}
+
+/* Showcase du projet */
+.project-showcase {
+    width: 65%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.project-hero {
+    position: relative;
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.project-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* Détails du projet */
+.project-details {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.project-tech {
+    margin: 3rem 0;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tech-list li {
+    padding: 0.5rem 1.5rem;
+    background: var(--surface-color);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Style du bouton circulaire */
+.project-live-link {
+    position: absolute;
+    left: -80px;
+    top: 31%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: 100;
+    transition: all 0.3s ease;
+    padding: 0;
+    z-index: 10;
+    border: 2px solid var(--text-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-live-link .visit-text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.project-live-link:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1600px) {
+    .project-showcase {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project-showcase {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .project-showcase {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-showcase {
+        width: 85%;
+        padding: 0 1rem;
+    }
+    
+    .project-hero {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .project-live-link {
+        left: -60px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-showcase {
+        width: 90%;
+    }
+
+    .project-hero {
+        margin-left: 50px;
+        width: calc(100% - 50px);
+    }
+
+    .project-live-link {
+        left: -50px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project-showcase {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+
+    .project-hero {
+        margin-left: 40px;
+        width: calc(100% - 40px);
+    }
+
+    .project-live-link {
+        left: -40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsive Design */
+/* Mobile S (320px) */
+@media screen and (max-width: 320px) {
+    .project-hero {
+        height: 40vh;
+        margin-left: 40px;
+        width: calc(100% - 40px);
+    }
+
+    .project-live-link {
+        left: -45px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-live-link .visit-text {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .project-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .project-details {
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+
+    .tech-list li {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile M (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .project-hero {
+        height: 45vh;
+        margin-left: 50px;
+    }
+
+    .project-live-link {
+        left: -50px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .project-header h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile L (425px) */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .project-hero {
+        height: 45vh;
+        margin-left: 55px;
+    }
+
+    .project-live-link {
+        left: -55px;
+        width: 95px;
+        height: 95px;
+    }
+}
+
+/* Tablette (768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .project-hero {
+        height: 50vh;
+        margin-left: 60px;
+    }
+
+    .project-showcase {
+        padding: 0 1.5rem;
+    }
+
+    .project-details {
+        padding: 0 1.5rem;
+    }
+
+    .project-header {
+        padding: 1.5rem;
+    }
+}
+
+/* Laptop (1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .project-hero {
+        height: 60vh;
+    }
+
+    .project-live-link {
+        left: -70px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .project-showcase {
+        max-width: 90%;
+    }
+}
+
+/* Laptop L (1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .project-showcase {
+        max-width: 1200px;
+    }
+
+    .project-live-link {
+        left: -100px;
+    }
+}
+
+/* 4K (2560px) */
+@media screen and (min-width: 1441px) {
+    .project-showcase {
+        max-width: 1600px;
+    }
+
+    .project-hero {
+        height: 80vh;
+    }
+
+    .project-live-link {
+        left: -200px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .project-live-link .visit-text {
+        font-size: 1rem;
+    }
+
+    .project-header h1 {
+        font-size: 3rem;
+    }
+
+    .project-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+/* Orientation Paysage pour Mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .project-hero {
+        height: 90vh;
+    }
+
+    .project-header {
+        margin-bottom: 2rem;
+    }
+
+    .project-details {
+        margin: 2rem auto;
+    }
+}
+
+/* Support des Hover uniquement sur les appareils qui le permettent */
+@media (hover: hover) {
+    .project-live-link:hover {
+        transform: translateY(-50%) scale(1.1);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .back-button:hover {
+        transform: translateX(-5px);
+    }
+}
+
+/* Préférences de réduction de mouvement */
+@media (prefers-reduced-motion: reduce) {
+    .project-main-image {
+        animation: none;
+        transform: none;
+    }
+
+    .project-live-link {
+        transition: none;
+    }
+}
+
+/* Support du mode sombre du système */
+@media (prefers-color-scheme: dark) {
+    .project-detail-page {
+        background: var(--background-color);
+    }
+}
+
+/* Support du mode clair du système */
+@media (prefers-color-scheme: light) {
+    .project-detail-page {
+        background: var(--background-color);
+    }
+} 

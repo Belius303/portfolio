@@ -1,0 +1,72 @@
+/* Conteneur principal des portes */
+.doors-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
+/* Styles communs pour les deux portes */
+.door {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 2s cubic-bezier(0.7, 0, 0.3, 1);
+    will-change: transform;
+}
+
+/* Porte gauche */
+.door-left {
+    left: 0;
+    background-image: url('../img/portegauche.png');
+    transform-origin: left center;
+}
+
+/* Porte droite */
+.door-right {
+    right: 0;
+    background-image: url('../img/portedroite.png');
+    transform-origin: right center;
+}
+
+/* Animation d'ouverture */
+.doors-opening .door-left {
+    transform: perspective(1000px) translateX(-150vw) rotateY(20deg) scale(1.1);
+}
+
+.doors-opening .door-right {
+    transform: perspective(1000px) translateX(150vw) rotateY(-20deg) scale(1.1);
+}
+
+/* État initial des portes */
+.doors-closed .door-left {
+    transform: translateX(0);
+}
+
+.doors-closed .door-right {
+    transform: translateX(0);
+}
+
+/* Animation de disparition */
+.doors-container.fade-out {
+    opacity: 0;
+}
+
+/* Effet de zoom subtil */
+.main-content {
+    position: relative;
+    animation: subtleZoom 2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
+@keyframes subtleZoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
