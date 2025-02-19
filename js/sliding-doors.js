@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     doorLeft.onload = checkImagesLoaded;
     doorRight.onload = checkImagesLoaded;
 
-    doorLeft.src = '../img/portegauche.png';
-    doorRight.src = '../img/portedroite.png';
+    doorLeft.src = '../img/portegauche.webp';
+    doorRight.src = '../img/portedroite.webp';
 
     function startDoorAnimation() {
         const doorsContainer = document.querySelector('.doors-container');

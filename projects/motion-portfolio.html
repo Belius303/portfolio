@@ -6,12 +6,121 @@
     <title>Portfolio for Motion Designer - Détails du Projet</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/project-details.css">
+    <style>
+        .project-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin: 2rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styles spécifiques pour mobile */
+        @media (max-width: 768px) {
+            .project-info p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                padding: 0 1rem;
+            }
+
+            .project-header {
+                padding: 1rem;
+            }
+
+            .project-header h1 {
+                font-size: 2.5rem;
+                margin-top: 2rem;
+                padding: 0 1rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.4;
+            }
+
+            .project-showcase {
+                padding: 0;
+                width: 100%;
+            }
+
+            .project-hero {
+                width: 100%;
+                margin: 0;
+                padding: 0 1rem;
+                position: relative;
+            }
+
+            .project-main-image {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                margin-bottom: 1rem;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                font-size: 1rem;
+            }
+
+            /* Repositionnement du bouton Visiter en mobile */
+            .project-live-link {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+
+            .project-live-link .visit-text {
+                font-size: 1.1rem;
+                padding: 1rem;
+            }
+        }
+
+        /* Ajustements supplémentaires pour très petits écrans */
+        @media (max-width: 480px) {
+            .project-header h1 {
+                font-size: 2rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .project-hero {
+                padding: 0 0.5rem;
+            }
+
+            .project-live-link {
+                width: 100px;
+                height: 100px;
+            }
+
+            .project-live-link .visit-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body class="project-detail-page">
     <!-- Contenu principal -->
     <main class="project-detail-content">
         <header class="project-header">
-            <a href="../index.html" class="back-button">
+            <a href="../index.html#projects" class="back-button">
                 <span class="back-arrow">←</span>
                 <span class="back-text">Retour</span>
             </a>
@@ -21,7 +130,7 @@
 
         <section class="project-showcase">
             <div class="project-hero">
-                <img src="../img/project-2.png" alt="Portfolio for Motion Designer" class="project-main-image">
+                <img src="../img/project-2.webp" alt="Portfolio for Motion Designer" class="project-main-image">
                 <a href="https://imani-mehdi.ovh" class="project-live-link" target="_blank" rel="noopener noreferrer">
                     <span class="visit-text">Visiter</span>
                 </a>
@@ -31,7 +140,7 @@
         <section class="project-details">
             <div class="project-info">
                 <h2>À Propos du Projet</h2>
-                <p>Description détaillée du projet...</p>
+                <p>Portfolio interactif conçu pour un motion designer, mettant en valeur ses créations à travers un carrousel de projets dynamique et élégant. Le site utilise JavaScript vanilla pour créer des animations fluides et des transitions personnalisées, offrant une expérience utilisateur immersive. L'interface épurée et moderne s'adapte parfaitement à tous les écrans grâce à un design responsive soigneusement élaboré en CSS. Le déploiement sur Cloudflare Pages assure des performances optimales et un chargement rapide des contenus multimédias. Une attention particulière a été portée à l'accessibilité et à l'optimisation SEO pour maximiser la visibilité du portfolio.</p>
                 
                 <div class="project-tech">
                     <h3>Technologies Utilisées</h3>

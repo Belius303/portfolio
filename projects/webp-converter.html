@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur en WebP - Détails du Projet</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-details.css">
+    <style>
+        .project-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin: 2rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styles spécifiques pour mobile */
+        @media (max-width: 768px) {
+            .project-info p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                padding: 0 1rem;
+            }
+
+            .project-header {
+                padding: 1rem;
+            }
+
+            .project-header h1 {
+                font-size: 2.5rem;
+                margin-top: 2rem;
+                padding: 0 1rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.4;
+            }
+
+            .project-showcase {
+                padding: 0;
+                width: 100%;
+            }
+
+            .project-hero {
+                width: 100%;
+                margin: 0;
+                padding: 0 1rem;
+            }
+
+            .project-main-image {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                margin-bottom: 1rem;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Ajustements supplémentaires pour très petits écrans */
+        @media (max-width: 480px) {
+            .project-header h1 {
+                font-size: 2rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .project-hero {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="project-detail-page">
+    <!-- Contenu principal -->
+    <main class="project-detail-content">
+        <header class="project-header">
+            <a href="../index.html#projects" class="back-button">
+                <span class="back-arrow">←</span>
+                <span class="back-text">Retour</span>
+            </a>
+            <h1>Convertisseur en WebP</h1>
+            <p class="project-subtitle">Projet en Flask et Python pour convertir des images en WebP animées</p>
+        </header>
+
+        <section class="project-showcase">
+            <div class="project-hero">
+                <img src="../img/project-3.webp" alt="Convertisseur en WebP" class="project-main-image">
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="project-info">
+                <h2>À Propos du Projet</h2>
+                <p>Ce convertisseur d'images en WebP est une application web développée avec Flask qui permet de transformer des images ou des séquences d'images en format WebP, optimisé pour le web. L'application utilise ffmpeg pour le traitement des images et la création d'animations, tandis que les WebSockets assurent une communication en temps réel avec l'utilisateur pendant la conversion. L'interface intuitive permet de glisser-déposer les images, de prévisualiser le résultat et d'ajuster les paramètres de compression. Le projet met l'accent sur la performance et l'optimisation des images pour le web tout en maintenant une qualité visuelle optimale.</p>
+                
+                <div class="project-tech">
+                    <h3>Technologies Utilisées</h3>
+                    <ul class="tech-list">
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>ffmpeg</li>
+                        <li>WebSockets</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

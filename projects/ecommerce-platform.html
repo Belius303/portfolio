@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Platform - Détails du Projet</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-details.css">
+    <style>
+        /* Styles de base */
+        .project-images {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 4rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .full-width-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 2rem;
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        .image-row.three-images {
+            justify-content: space-between;
+        }
+
+        .third-width-image {
+            width: calc(33.333% - 1.33rem);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            height: auto;
+            max-height: 400px;
+        }
+
+        .half-width-image {
+            width: calc(50% - 1rem);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            height: auto;
+            max-height: 500px;
+        }
+
+        .project-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin: 2rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styles spécifiques pour mobile */
+        @media (max-width: 768px) {
+            .project-info p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                padding: 0 1rem;
+            }
+
+            .project-header {
+                padding: 1rem;
+            }
+
+            .project-header h1 {
+                font-size: 2.5rem;
+                margin-top: 2rem;
+                padding: 0 1rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.4;
+            }
+
+            .project-images {
+                margin: 2rem auto;
+                padding: 0 1rem;
+                gap: 1rem;
+            }
+
+            .image-row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .image-row.three-images {
+                gap: 1rem;
+            }
+
+            .third-width-image,
+            .half-width-image {
+                width: 100%;
+                max-height: none;
+                margin-bottom: 1rem;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Ajustements supplémentaires pour très petits écrans */
+        @media (max-width: 480px) {
+            .project-header h1 {
+                font-size: 2rem;
+            }
+
+            .project-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .project-images {
+                padding: 0 0.5rem;
+            }
+
+            .full-width-image,
+            .third-width-image,
+            .half-width-image {
+                border-radius: 6px;
+            }
+        }
+    </style>
+</head>
+<body class="project-detail-page">
+    <!-- Contenu principal -->
+    <main class="project-detail-content">
+        <header class="project-header">
+            <a href="../index.html#projects" class="back-button">
+                <span class="back-arrow">←</span>
+                <span class="back-text">Retour</span>
+            </a>
+            <h1>E-commerce Platform</h1>
+            <p class="project-subtitle">Application web full-stack avec Php, Python et base de données Sql</p>
+        </header>
+
+        <section class="project-showcase">
+            <div class="project-images">
+                <!-- Image complète du site -->
+                <img src="../img/ttlapage.webp" alt="Vue complète du site e-commerce" class="full-width-image">
+                
+                <!-- Rangée de 3 images -->
+                <div class="image-row three-images">
+                    <img src="../img/login.webp" alt="Page de connexion" class="third-width-image">
+                    <img src="../img/sign-in.webp" alt="Page d'inscription" class="third-width-image">
+                    <img src="../img/profil.webp" alt="Page de profil utilisateur" class="third-width-image">
+                </div>
+
+                <!-- Rangée de 2 images -->
+                <div class="image-row">
+                    <img src="../img/panier.webp" alt="Panier d'achat" class="half-width-image">
+                    <img src="../img/paiment.webp" alt="Page de paiement" class="half-width-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="project-info">
+                <h2>À Propos du Projet</h2>
+                <p>Cette plateforme e-commerce est une application web complète qui intègre une base de données sophistiquée de comptes IPTV. Le système permet aux utilisateurs de parcourir, sélectionner et acheter des abonnements IPTV à travers une interface intuitive et sécurisée. La base de données a été spécialement conçue pour gérer des comptes IPTV fictifs à des fins de démonstration, permettant de simuler un environnement réel de vente d'abonnements. L'application inclut un système d'authentification robuste, un panier d'achat dynamique, et un processus de paiement sécurisé. Les utilisateurs peuvent gérer leur profil, consulter leur historique d'achats et accéder à leurs informations d'abonnement depuis leur espace personnel.</p>
+                
+                <div class="project-tech">
+                    <h3>Technologies Utilisées</h3>
+                    <ul class="tech-list">
+                        <li>Php</li>
+                        <li>Python</li>
+                        <li>Sql</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

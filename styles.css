@@ -2047,8 +2047,7 @@ body::before {
     }
 
     .timeline-marker {
-        left: 30px !important;
-        right: auto !important;
+        display: none !important;
     }
 
     .location-tag {
@@ -2130,4 +2129,10 @@ section h2,
 .stats {
     transform: none !important;
     transform-style: flat !important;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-marker {
+        display: none !important;
+    }
 } 

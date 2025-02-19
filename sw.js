@@ -7,9 +7,9 @@ const ASSETS_TO_CACHE = [
     'styles.css',
     'manifest.json',
     'sw.js',
-    'img/project-1.png',
-    'img/project-2.png',
-    'img/project-3.png'
+    'img/project-1.webp',
+    'img/project-2.webp',
+    'img/project-3.webp'
 ];
 
 // Ressources externes à mettre en cache

@@ -25,14 +25,14 @@
 /* Porte gauche */
 .door-left {
     left: 0;
-    background-image: url('../img/portegauche.png');
+    background-image: url('../img/portegauche.webp');
     transform-origin: left center;
 }
 
 /* Porte droite */
 .door-right {
     right: 0;
-    background-image: url('../img/portedroite.png');
+    background-image: url('../img/portedroite.webp');
     transform-origin: right center;
 }
 
